@@ -16,7 +16,7 @@ pipelineJob('oasis-job') {
                     remote {
                         url 'https://github.com/BoPang123/NUS_DMSS_PracticeModule_Team3.git'
                     }
-                    branch 'main'
+                    branch 'master'
                 }
             }
         }
