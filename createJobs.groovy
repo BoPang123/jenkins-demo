@@ -1,10 +1,15 @@
-pipelineJob('oasis-job') {
+pipelineJob('pipelineJob') {
     definition {
         cps {
             script(readFileFromWorkspace('pipelineJob.groovy'))
             sandbox()
         }
+    }
+}
 
+
+pipelineJob('oasis-job') {
+    definition {
         cpsScm {
             scm {
                 git {
