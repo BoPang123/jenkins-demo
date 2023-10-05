@@ -7,9 +7,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh './gradlew build docker dockerRun'
+                sh 'chmod +x ./gradlew'
+                sh './gradlew assemble'
             }
         }
+
         stage('Test') {
             steps {
                 sh './gradlew test'
